@@ -1,0 +1,155 @@
+html,
+body {
+    background-color: #F0F0F0;
+    ;
+    font-family: '微軟正黑體';
+    margin: 0;
+}
+
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    display: inline;
+}
+
+.title-bar {
+    height: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 1px 10px darkgray;
+}
+
+#backbutton {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 30px;
+}
+
+#backbutton:active {
+    opacity: 0.8;
+}
+
+.col-2-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.mapList {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.title {
+    line-height: 35px;
+}
+
+.add {
+    /*地址類*/
+    font-size: 14px;
+    display: block;
+    margin: 0;
+    color: gray;
+}
+
+.icon {
+    height: 48px;
+    width: 48px;
+    margin-top: 6px;
+    margin-left: 5px;
+    float: left;
+}
+
+.dispos {
+    /*距離*/
+    float: right;
+    line-height: 60px;
+}
+
+#spinner {
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    z-index: 2;
+    text-align: center;
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1,
+.dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes sk-rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}

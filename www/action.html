@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/action.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/loading.css">
+
+</head>
+
+<body>
+    <script>
+        $('body').loading({
+            message: '行動導覽載入中...'
+        });
+    </script>
+    <div class="app" style="position:relative;overflow-x:hidden">
+
+        <div id="deviceready" class="blink">
+            <p class="event listening"></p>
+            <p class="event received"></p>
+        </div>
+        <div class="poi" id="templePoi">
+            <img src="img/poi/poi1.svg" alt="" class="poiimg">
+            <p class="poiname">東隆宮</p>
+            <p class="poidis" id="templedis"></p>
+        </div>
+        <div class="poi" id="bigponPoi">
+            <img src="img/poi/poi2.svg" alt="" class="poiimg">
+            <p class="poiname">大鵬灣</p>
+            <p class="poidis" id="bigpondis"></p>
+        </div>
+        <div class="poi" id="newcityPoi">
+            <img src="img/poi/poi3.svg" alt="" class="poiimg">
+            <p class="poiname">共和新村</p>
+            <p class="poidis" id="newcitydis"></p>
+        </div>
+        <div class="poi" id="marketPoi">
+            <img src="img/poi/poi4.svg" alt="" class="poiimg">
+            <p class="poiname">華僑市場</p>
+            <p class="poidis" id="marketdis"></p>
+        </div>
+        <div class="poi" id="bigwetPoi">
+            <img src="img/poi/poi5.svg" alt="" class="poiimg">
+            <p class="poiname">大潭濕地</p>
+            <p class="poidis" id="bigwetdis"></p>
+        </div>
+        <div class="poi" id="rightPoi">
+            <img src="img/poi/poi5.svg" alt="" class="poiimg">
+            <p class="poiname">右岸濕地</p>
+            <p class="poidis" id="rightdis"></p>
+        </div>
+        <div class="poi" id="shellPoi">
+            <img src="img/poi/poi6.svg" alt="" class="poiimg">
+            <p class="poiname">蚵殼島</p>
+            <p class="poidis" id="shelldis"></p>
+        </div>
+        <div class="poi" id="sunsetPoi">
+            <img src="img/poi/poi7.svg" alt="" class="poiimg">
+            <p class="poiname">落日灣</p>
+            <p class="poidis" id="sunsetdis"></p>
+        </div>
+        <div class="poi" id="bridgePoi">
+            <img src="img/poi/poi8.svg" alt="" class="poiimg">
+            <p class="poiname">映霞橋亭</p>
+            <p class="poidis" id="bridgedis"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/action.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTPhSnft6vMSQniKysVC959I5z1g625w&language=zh-TW&region=tw&libraries=geometry" defer></script>
+</body>
+
+</html>

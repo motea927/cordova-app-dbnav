@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/setting.css">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="app">
+
+        <div id="deviceready" class="blink">
+            <p class="event listening"></p>
+            <p class="event received"></p>
+
+        </div>
+
+
+        <div class="title-bar">
+            <img src="img/backbutton.png" alt="" id="backbutton" onclick="window.history.go(-1); return false;">
+            <h1>功能設定</h1>
+        </div>
+        <div class="setBlock">
+            <h2>行動導覽:</h2>
+            <hr>
+            <p class="disSet">距離</p>
+            <input type="number" value="" id="dis">
+            <p class="disSet">公尺顯示附近景點資訊</p>
+        </div>
+        <button onclick="saveSetting()" class="btn-save"><p>保存</p></button>
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/setting.js"></script>
+
+</body>
+
+</html>

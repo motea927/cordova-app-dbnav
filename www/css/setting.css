@@ -1,0 +1,80 @@
+.event {
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #F0F0F0;
+    font-family: '微軟正黑體';
+    margin: 0;
+}
+
+.title-bar {
+    height: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 1px 10px darkgray;
+}
+
+#backbutton {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 30px;
+}
+
+#backbutton:active {
+    opacity: 0.8;
+}
+
+h1 {
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: lightgray;
+}
+
+h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.disSet {
+    display: inline;
+}
+
+.setBlock {
+    background-color: white;
+    margin: 8px 6px 0px 6px;
+    padding: 5px;
+    box-shadow: 0 1px 10px darkgray;
+    border-radius: 5px;
+}
+
+.btn-save {
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    border: none;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0;
+}
+
+.btn-save:active {
+    opacity: 0.8;
+}
+
+.btn-save p {
+    color: white;
+}
+
+input {
+    width: 60px;
+    border-color: orange;
+}

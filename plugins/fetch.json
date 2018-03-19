@@ -1,0 +1,50 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-device-orientation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device-orientation@1.0.7"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geolocation@3.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-nativestorage": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-nativestorage"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ezar-videooverlay": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ezar-videooverlay"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-camera-preview": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

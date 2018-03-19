@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/map.css">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(window).bind("beforeunload", function() {
+
+            $("#map").css({
+                "opacity": "0.8"
+            });
+            $("#spinner").show();
+        });
+    </script>
+    <script src=js/infobubble-compiled.js></script>
+    <script src="js/map.js"></script>
+
+    <title></title>
+
+</head>
+
+<body>
+    <div id="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+    </div>
+
+
+
+    <div class="title-bar">
+        <img src="img/backbutton.png" alt="" id="backbutton" onclick="window.history.go(-1); return false;">
+        <h1>地圖導覽</h1>
+
+    </div>
+
+
+
+    <!--導覽列↑-->
+
+    <div id="map">
+
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTPhSnft6vMSQniKysVC959I5z1g625w&callback=initMap" async defer></script>
+    <!--地圖KEY碼↓↓-->
+
+
+
+    <!--地圖KEY碼↑↑-->
+
+
+
+</body>
+
+</html>

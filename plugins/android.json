@@ -1,0 +1,30 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.dbnav"
+    },
+    "cordova-plugin-device-orientation": {
+      "PACKAGE_NAME": "com.dbnav"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.dbnav"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.dbnav"
+    },
+    "cordova-plugin-ezar-videooverlay": {
+      "PACKAGE_NAME": "com.dbnav"
+    },
+    "cordova-plugin-camera-preview": {
+      "PACKAGE_NAME": "com.dbnav"
+    }
+  },
+  "dependent_plugins": {}
+}

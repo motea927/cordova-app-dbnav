@@ -1,0 +1,89 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-ezar-videooverlay",
+        "scope": null,
+        "escapedName": "cordova-plugin-ezar-videooverlay",
+        "name": "cordova-plugin-ezar-videooverlay",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\cordovaProject\\newSt"
+    ]
+  ],
+  "_from": "cordova-plugin-ezar-videooverlay@latest",
+  "_id": "cordova-plugin-ezar-videooverlay@1.0.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-ezar-videooverlay",
+  "_nodeVersion": "8.1.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-ezar-videooverlay-1.0.0.tgz_1500408432539_0.510636594844982"
+  },
+  "_npmUser": {
+    "name": "ezar",
+    "email": "info@ezartech.com"
+  },
+  "_npmVersion": "5.0.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-ezar-videooverlay",
+    "scope": null,
+    "escapedName": "cordova-plugin-ezar-videooverlay",
+    "name": "cordova-plugin-ezar-videooverlay",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-ezar-videooverlay/-/cordova-plugin-ezar-videooverlay-1.0.0.tgz",
+  "_shasum": "59ca6a8ab73218e1b75282abc94814253812031a",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-ezar-videooverlay",
+  "_where": "C:\\cordovaProject\\newSt",
+  "author": {
+    "name": "Wayne Parrott",
+    "email": "wayne@ezartech.com",
+    "url": "https://ezartech.com"
+  },
+  "cordova": {
+    "id": "cordova-plugin-ezar-videooverlay",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "Overlay the Cordova webview onto a live video stream",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-3iz9y60Q9kz6ooOJQHJ5AsJyG4NZtMSldOPTq4ItArywfV3tX6naaBmqSL6u7+7hgLgA5fbelGj+ulczHx920A==",
+    "shasum": "59ca6a8ab73218e1b75282abc94814253812031a",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-ezar-videooverlay/-/cordova-plugin-ezar-videooverlay-1.0.0.tgz"
+  },
+  "gitHead": "635c4981495e5fc8407adc638fffa187e74f9da9",
+  "homepage": "https://ezartech.com",
+  "keywords": [
+    "augmented reality",
+    "video preview",
+    "overlay",
+    "computer vision"
+  ],
+  "license": "modified MIT License, see http://ezartech.com/ezarstartupkit-license",
+  "maintainers": [
+    {
+      "name": "ezar",
+      "email": "info@ezartech.com"
+    }
+  ],
+  "name": "cordova-plugin-ezar-videooverlay",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "version": "1.0.0"
+}

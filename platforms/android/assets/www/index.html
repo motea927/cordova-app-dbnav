@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+
+<body>
+
+    <div class="app">
+	
+        <div class="title">
+            <img src="img/indeximg/title.png" alt="">
+        </div>
+
+        <div class="cloudy">
+            <img src="img/indeximg/cloudy.png" alt="">
+        </div>
+        <div class="cloudy2">
+            <img src="img/indeximg/cloudy.png" alt="">
+        </div>
+
+        <div class="ocean">
+			<div id="imgod1"></div>
+			<div id="imgod2"></div>
+			
+            <div class="fish">
+                <img src="img/indeximg/fish.png" alt="">
+            </div>
+            <div class="fish2">
+                <img src="img/indeximg/fish.png" alt="">
+            </div>
+            <div class="wave"></div>
+
+            <div class='bubbles'>
+                <span></span><span></span><span></span><span></span><span></span>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="sun">
+
+        </div>
+
+        <div class="col-2-container">
+            <div id="deviceready" class="blink">
+                <p class="event listening"></p>
+                <p class="event received"></p>
+            </div>
+
+            <div class="iconcol">
+                <a onclick="location.href='list.html'">
+                    <div class="iconblock" id="icon1">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTI0LDE2LjAwMWMwLDAuMjc0LTAuMjIzLDAuNDk5LTAuNTAzLDAuNDk5aC0xOGMtMC4yNzIsMC0wLjQ5NC0wLjIyNS0wLjQ5NC0wLjQ5OSAgVjE0YzAtMC4yNzQsMC4yMjItMC41LDAuNDk0LTAuNWgxOEMyMy43NzcsMTMuNSwyNCwxMy43MjYsMjQsMTRWMTYuMDAxeiBNMywxNGMwLTAuMjc0LTAuMjIzLTAuNS0wLjUwMy0wLjVIMC41MDMgIEMwLjIyMywxMy41LDAsMTMuNzI2LDAsMTR2Mi4wMDFDMCwxNi4yNzUsMC4yMjMsMTYuNSwwLjUwMywxNi41aDEuOTk0QzIuNzc3LDE2LjUsMywxNi4yNzUsMywxNi4wMDFWMTR6IE0yNCwyMCAgYzAtMC4yNzQtMC4yMjMtMC41LTAuNTAzLTAuNWgtMThjLTAuMjcyLDAtMC40OTQsMC4yMjYtMC40OTQsMC41djIuMDAxYzAsMC4yNzQsMC4yMjIsMC40OTksMC40OTQsMC40OTloMTggIGMwLjI4LDAsMC41MDMtMC4yMjUsMC41MDMtMC40OTlWMjB6IE0zLDIwYzAtMC4yNzQtMC4yMjMtMC41LTAuNTAzLTAuNUgwLjUwM0MwLjIyMywxOS41LDAsMTkuNzI2LDAsMjB2Mi4wMDEgIEMwLDIyLjI3NSwwLjIyMywyMi41LDAuNTAzLDIyLjVoMS45OTRDMi43NzcsMjIuNSwzLDIyLjI3NSwzLDIyLjAwMVYyMHogTTI0LDhjMC0wLjI3NC0wLjIyMy0wLjUtMC41MDMtMC41aC0xOCAgQzUuMjI1LDcuNSw1LjAwMyw3LjcyNiw1LjAwMyw4djIuMDAxYzAsMC4yNzQsMC4yMjIsMC40OTksMC40OTQsMC40OTloMThjMC4yOCwwLDAuNTAzLTAuMjI1LDAuNTAzLTAuNDk5Vjh6IE0zLDggIGMwLTAuMjc0LTAuMjIzLTAuNS0wLjUwMy0wLjVIMC41MDNDMC4yMjMsNy41LDAsNy43MjYsMCw4djIuMDAxQzAsMTAuMjc1LDAuMjIzLDEwLjUsMC41MDMsMTAuNWgxLjk5NCAgQzIuNzc3LDEwLjUsMywxMC4yNzUsMywxMC4wMDFWOHogTTI0LDJjMC0wLjI3NC0wLjIyMy0wLjUtMC41MDMtMC41aC0xOEM1LjIyNSwxLjUsNS4wMDMsMS43MjYsNS4wMDMsMnYyLjAwMSAgYzAsMC4yNzQsMC4yMjIsMC40OTksMC40OTQsMC40OTloMThDMjMuNzc3LDQuNSwyNCw0LjI3NSwyNCw0LjAwMVYyeiBNMywyYzAtMC4yNzQtMC4yMjMtMC41LTAuNTAzLTAuNUgwLjUwMyAgQzAuMjIzLDEuNSwwLDEuNzI2LDAsMnYyLjAwMUMwLDQuMjc1LDAuMjIzLDQuNSwwLjUwMyw0LjVoMS45OTRDMi43NzcsNC41LDMsNC4yNzUsMyw0LjAwMVYyeiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+"
+                            alt="" />
+                        <h2>景點列表</h2>
+                    </div>
+                </a>
+                <a onclick="location.href='action.html'">
+                    <div class="iconblock" id="icon3">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9ImNvbXBhc3Mtcm91dGUtdHJhdmVsLWV4cGxvcmUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE1IDE1OyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTUgMTUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik03LjUsMEMzLjM2NCwwLDAsMy4zNjQsMCw3LjVTMy4zNjQsMTUsNy41LDE1UzE1LDExLjYzNiwxNSw3LjVTMTEuNjM2LDAsNy41LDB6IE03LjUsMTRDMy45MTYsMTQsMSwxMS4wODQsMSw3LjUgIFMzLjkxNiwxLDcuNSwxUzE0LDMuOTE2LDE0LDcuNVMxMS4wODQsMTQsNy41LDE0eiIvPjxwYXRoIGQ9Ik0zLjAxMiwxMS45ODhsNi4yODMtMi42OTNsMi42OTMtNi4yODNMNS43MDUsNS43MDVMMy4wMTIsMTEuOTg4eiBNNi4yNTUsNi45NjJsMS43ODQsMS43ODRsLTMuMTIyLDEuMzM4TDYuMjU1LDYuOTYyeiAgIE04Ljc0NSw4LjAzOEw2Ljk2Miw2LjI1NWwzLjEyMi0xLjMzOEw4Ljc0NSw4LjAzOHoiLz48L3N2Zz4="
+                            alt="" />
+                        <h2>行動導覽</h2>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="iconcol">
+                <a onclick="location.href='top.html'">
+                    <div class="iconblock" id="icon2">
+
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxwb2x5bGluZSBmaWxsPSJub25lIiBwb2ludHM9IiAgIDY0OSwxMzcuOTk5IDY3NSwxMzcuOTk5IDY3NSwxNTUuOTk5IDY2MSwxNTUuOTk5ICAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjxwb2x5bGluZSBmaWxsPSJub25lIiBwb2ludHM9IiAgIDY1MywxNTUuOTk5IDY0OSwxNTUuOTk5IDY0OSwxNDEuOTk5ICAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjxwb2x5bGluZSBmaWxsPSJub25lIiBwb2ludHM9IiAgIDY2MSwxNTYgNjUzLDE2MiA2NTMsMTU2ICAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48Zz48Zz48cGF0aCBkPSJNMTYsMjdjLTAuMjMsMC0wLjQ2MS0wLjA3OS0wLjY0OC0wLjIzOGMtMC4yNDItMC4yMDYtNS45NDItNS4xLTguMzItMTAuNDM4Yy0wLjIyNS0wLjUwNCwwLjAwMi0xLjA5NiwwLjUwNy0xLjMyICAgIGMwLjUwMy0wLjIyNCwxLjA5NSwwLjAwMiwxLjMyLDAuNTA3YzEuNzM5LDMuOTA1LDUuNTc3LDcuNjk5LDcuMTI0LDkuMTNDMTguNzEzLDIxLjk5MSwyNCwxNi4wNjksMjQsMTIuMjMgICAgQzI0LDcuNjkyLDIwLjQxMSw0LDE2LDRzLTgsMy42OTItOCw4LjIzYzAsMC41NTItMC40NDgsMS0xLDFzLTEtMC40NDgtMS0xQzYsNi41ODksMTAuNDg2LDIsMTYsMmM1LjUxNCwwLDEwLDQuNTg5LDEwLDEwLjIzICAgIGMwLDUuOTEyLTguOTQ0LDE0LjE1OS05LjMyNSwxNC41MDhDMTYuNDg0LDI2LjkxMiwxNi4yNDIsMjcsMTYsMjd6Ii8+PC9nPjxnPjxwYXRoIGQ9Ik0xNiwxNmMtMi4yMDYsMC00LTEuNzk0LTQtNHMxLjc5NC00LDQtNGMyLjIwNiwwLDQsMS43OTQsNCw0UzE4LjIwNiwxNiwxNiwxNnogTTE2LDEwYy0xLjEwMywwLTIsMC44OTctMiwyczAuODk3LDIsMiwyICAgIGMxLjEwMywwLDItMC44OTcsMi0yUzE3LjEwMywxMCwxNiwxMHoiLz48L2c+PGc+PHBhdGggZD0iTTI5LDMwSDNjLTAuMzU2LDAtMC42ODYtMC4xODktMC44NjUtMC40OThjLTAuMTc5LTAuMzA5LTAuMTgtMC42ODgtMC4wMDMtMC45OThsNC03YzAuMjc0LTAuNDc5LDAuODg1LTAuNjQ3LDEuMzY0LTAuMzcyICAgIGMwLjQ3OSwwLjI3NCwwLjY0NiwwLjg4NSwwLjM3MiwxLjM2NEw0LjcyMywyOGgyMi41NTNsLTMuMTQ1LTUuNTA0Yy0wLjI3NC0wLjQ3OS0wLjEwNy0xLjA5LDAuMzcyLTEuMzY0ICAgIGMwLjQ3OS0wLjI3NiwxLjA5LTAuMTA3LDEuMzY0LDAuMzcybDQsN2MwLjE3NywwLjMxLDAuMTc2LDAuNjg5LTAuMDAzLDAuOTk4QzI5LjY4NiwyOS44MTEsMjkuMzU2LDMwLDI5LDMweiIvPjwvZz48L2c+PC9zdmc+"
+                            alt="" />
+                        <h2>TOP景點</h2>
+
+                    </div>
+                </a>
+
+                <a onclick="location.href='setting.html'">
+                    <div class="iconblock" id="icon4">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9InNldHRpbmctZ2Vhci1wcm9jZXNzLWVuZ2luZWVyaW5nIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNSAxNTsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE1IDE1IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBkPSJNNy41LDRDNS41Nyw0LDQsNS41Nyw0LDcuNVM1LjU3LDExLDcuNSwxMVMxMSw5LjQzLDExLDcuNVM5LjQzLDQsNy41LDR6IE03LjUsMTBDNi4xMjIsMTAsNSw4Ljg3OCw1LDcuNVM2LjEyMiw1LDcuNSw1ICBTMTAsNi4xMjIsMTAsNy41UzguODc4LDEwLDcuNSwxMHoiLz48cGF0aCBkPSJNMTUsOVY2aC0yLjIwOGMtMC4xMTctMC40MDktMC4yODEtMC44MDMtMC40OTItMS4xNzlsMS41NjMtMS41NjRsLTIuMTIxLTIuMTIxTDEwLjE3OSwyLjdDOS44MDMsMi40ODksOS40MDksMi4zMjUsOSwyLjIwOCAgVjBINnYyLjIwOEM1LjU5MSwyLjMyNSw1LjE5NywyLjQ4OSw0LjgyMSwyLjdMMy4yNTcsMS4xMzZMMS4xMzYsMy4yNTdMMi43LDQuODIxQzIuNDg5LDUuMTk3LDIuMzI1LDUuNTkxLDIuMjA4LDZIMHYzaDIuMjA4ICBDMi4zMjUsOS40MDksMi40ODksOS44MDMsMi43LDEwLjE3OWwtMS41NjMsMS41NjRsMi4xMjEsMi4xMjFMNC44MjEsMTIuM2MwLjM3NSwwLjIxMSwwLjc3LDAuMzc1LDEuMTc5LDAuNDkyVjE1aDN2LTIuMjA4ICBjMC40MDktMC4xMTcsMC44MDMtMC4yODEsMS4xNzktMC40OTJsMS41NjQsMS41NjNsMi4xMjEtMi4xMjFMMTIuMywxMC4xNzljMC4yMTEtMC4zNzUsMC4zNzUtMC43NywwLjQ5Mi0xLjE3OUgxNXogTTEyLjQ1LDExLjc0MyAgbC0wLjcwNywwLjcwN2wtMS40MjMtMS40MjNsLTAuMzQxLDAuMjI1QzkuNDksMTEuNTc0LDguOTU5LDExLjc5Niw4LjQsMTEuOTFMOCwxMS45OTFWMTRIN3YtMi4wMDlMNi42LDExLjkxICBjLTAuNTU5LTAuMTE0LTEuMDktMC4zMzUtMS41NzgtMC42NThsLTAuMzQxLTAuMjI1TDMuMjU3LDEyLjQ1TDIuNTUsMTEuNzQzbDEuNDIzLTEuNDIzTDMuNzQ5LDkuOTc5ICBDMy40MjYsOS40OSwzLjIwNCw4Ljk1OSwzLjA5LDguNEwzLjAwOSw4SDFWN2gyLjAwOUwzLjA5LDYuNmMwLjExNC0wLjU1OSwwLjMzNS0xLjA5LDAuNjU4LTEuNTc4bDAuMjI1LTAuMzQxTDIuNTUsMy4yNTcgIEwzLjI1NywyLjU1bDEuNDIzLDEuNDIzbDAuMzQxLTAuMjI1QzUuNTEsMy40MjYsNi4wNDEsMy4yMDQsNi42LDMuMDlMNywzLjAwOVYxaDF2Mi4wMDlMOC40LDMuMDkgIGMwLjU1OSwwLjExNCwxLjA5LDAuMzM1LDEuNTc4LDAuNjU4bDAuMzQxLDAuMjI1bDEuNDIzLTEuNDIzbDAuNzA3LDAuNzA3bC0xLjQyMywxLjQyM2wwLjIyNSwwLjM0MSAgQzExLjU3NCw1LjUxLDExLjc5Niw2LjA0MSwxMS45MSw2LjZMMTEuOTkxLDdIMTR2MWgtMi4wMDlMMTEuOTEsOC40Yy0wLjExNCwwLjU1OS0wLjMzNSwxLjA5LTAuNjU4LDEuNTc4bC0wLjIyNSwwLjM0MSAgTDEyLjQ1LDExLjc0M3oiLz48L3N2Zz4="
+                            alt="" />
+                        <h2>功能設定</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="iconkingbar">
+                <a onclick="location.href='map.html'">
+                    <div class="iconking">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxwb2x5bGluZSBmaWxsPSJub25lIiBwb2ludHM9IiAgIDY0OSwxMzcuOTk5IDY3NSwxMzcuOTk5IDY3NSwxNTUuOTk5IDY2MSwxNTUuOTk5ICAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjxwb2x5bGluZSBmaWxsPSJub25lIiBwb2ludHM9IiAgIDY1MywxNTUuOTk5IDY0OSwxNTUuOTk5IDY0OSwxNDEuOTk5ICAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjxwb2x5bGluZSBmaWxsPSJub25lIiBwb2ludHM9IiAgIDY2MSwxNTYgNjUzLDE2MiA2NTMsMTU2ICAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48Zz48Zz48cGF0aCBkPSJNMTYsMjdjLTAuMjMsMC0wLjQ2MS0wLjA3OS0wLjY0OC0wLjIzOGMtMC4yNDItMC4yMDYtNS45NDItNS4xLTguMzItMTAuNDM4Yy0wLjIyNS0wLjUwNCwwLjAwMi0xLjA5NiwwLjUwNy0xLjMyICAgIGMwLjUwMy0wLjIyNCwxLjA5NSwwLjAwMiwxLjMyLDAuNTA3YzEuNzM5LDMuOTA1LDUuNTc3LDcuNjk5LDcuMTI0LDkuMTNDMTguNzEzLDIxLjk5MSwyNCwxNi4wNjksMjQsMTIuMjMgICAgQzI0LDcuNjkyLDIwLjQxMSw0LDE2LDRzLTgsMy42OTItOCw4LjIzYzAsMC41NTItMC40NDgsMS0xLDFzLTEtMC40NDgtMS0xQzYsNi41ODksMTAuNDg2LDIsMTYsMmM1LjUxNCwwLDEwLDQuNTg5LDEwLDEwLjIzICAgIGMwLDUuOTEyLTguOTQ0LDE0LjE1OS05LjMyNSwxNC41MDhDMTYuNDg0LDI2LjkxMiwxNi4yNDIsMjcsMTYsMjd6Ii8+PC9nPjxnPjxwYXRoIGQ9Ik0xNiwxNmMtMi4yMDYsMC00LTEuNzk0LTQtNHMxLjc5NC00LDQtNGMyLjIwNiwwLDQsMS43OTQsNCw0UzE4LjIwNiwxNiwxNiwxNnogTTE2LDEwYy0xLjEwMywwLTIsMC44OTctMiwyczAuODk3LDIsMiwyICAgIGMxLjEwMywwLDItMC44OTcsMi0yUzE3LjEwMywxMCwxNiwxMHoiLz48L2c+PGc+PHBhdGggZD0iTTI5LDMwSDNjLTAuMzU2LDAtMC42ODYtMC4xODktMC44NjUtMC40OThjLTAuMTc5LTAuMzA5LTAuMTgtMC42ODgtMC4wMDMtMC45OThsNC03YzAuMjc0LTAuNDc5LDAuODg1LTAuNjQ3LDEuMzY0LTAuMzcyICAgIGMwLjQ3OSwwLjI3NCwwLjY0NiwwLjg4NSwwLjM3MiwxLjM2NEw0LjcyMywyOGgyMi41NTNsLTMuMTQ1LTUuNTA0Yy0wLjI3NC0wLjQ3OS0wLjEwNy0xLjA5LDAuMzcyLTEuMzY0ICAgIGMwLjQ3OS0wLjI3NiwxLjA5LTAuMTA3LDEuMzY0LDAuMzcybDQsN2MwLjE3NywwLjMxLDAuMTc2LDAuNjg5LTAuMDAzLDAuOTk4QzI5LjY4NiwyOS44MTEsMjkuMzU2LDMwLDI5LDMweiIvPjwvZz48L2c+PC9zdmc+"
+                            alt="" />
+                        <h2>地圖導覽</h2>
+                    </div>
+                </a>
+                <div id="iconkingbg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>

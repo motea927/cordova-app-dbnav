@@ -1,0 +1,138 @@
+html,
+body {
+    font-family: '微軟正黑體';
+    height: 100%;
+    margin: 0;
+}
+
+.app {
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.title-bar {
+    height: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+#backbutton {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 30px;
+}
+
+#backbutton:active {
+    opacity: 0.8;
+}
+
+h1 {
+    margin: 0;
+    line-height: 50px;
+    font-weight: normal;
+}
+
+#map {
+    /*地圖區塊*/
+    height: 92%;
+}
+
+.infotitle {
+    color: #fff;
+    font-size: 16px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.infosubtitle {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.infoins {
+    color: #c4d6b1;
+    line-height: 16px;
+    margin: 10px;
+    padding: 0;
+}
+
+.infoimg {
+    float: right;
+    margin: 10px;
+}
+
+#spinner {
+    display: none;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    z-index: 2;
+    text-align: center;
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1,
+.dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: gray;
+    border-radius: 100%;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes sk-rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}

@@ -1,0 +1,70 @@
+body {
+    background-color: transparent;
+    overflow-x: hidden;
+    /*background-color: black;*/
+}
+
+html,
+body {
+    font-family: '微軟正黑體';
+    height: 100%;
+    margin: 0;
+}
+
+p {
+    color: white;
+    margin: 0;
+}
+
+.app {
+    height: 100%;
+    overflow: hidden;
+}
+
+#info {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    width: 80%;
+    background: black;
+    opacity: 0.6;
+    height: 10%;
+    clear: left;
+}
+
+#info p {
+    color: white;
+    margin: 0;
+}
+
+.poi {
+    height: 32px;
+    background-color: black;
+    opacity: 0.7;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 220px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.poiimg,
+.poi p {
+    display: inline;
+}
+
+.poiimg {
+    height: 32px;
+    width: 32px;
+    vertical-align: top;
+}
+
+.poiname {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.poidis {
+    padding-top: 10px;
+}

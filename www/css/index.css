@@ -1,0 +1,628 @@
+html,
+body {
+    background-color: rgb(255, 236, 180);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: '微軟正黑體';
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.title {
+    position: absolute;
+    top: 7%;
+    width: 100%;
+}
+
+.title img {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+}
+
+.cloudy {
+    position: absolute;
+    top: 0%;
+}
+
+.cloudy2 {
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    top: 15%;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.cloudy2 img {
+    margin-left: 30%;
+}
+
+
+/*海洋*/
+
+.ocean {
+    background-color: rgb(177, 233, 241);
+    height: 44%;
+    width: 100%;
+    top: 56%;
+    position: absolute;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.sun {
+    border-radius: 99em;
+    width: 100%;
+    height: 56.25%;
+    top: 28.125%;
+    background-color: rgb(255, 223, 129);
+    z-index: -1;
+    position: absolute;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: normal;
+    padding: 2px;
+}
+
+#icon1:active,
+#icon2:active,
+#icon3:active,
+#icon4:active,
+.iconking:active {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.col-2-container {
+    position: relative;
+    max-width: 900px;
+    margin: 32% auto;
+}
+
+.iconcol {
+    width: 50%;
+    float: left;
+}
+
+.iconcol img {
+    height: 64px;
+    width: 64px;
+}
+
+.iconblock {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#icon1 {
+    background-color: #FF6FB0;
+    background-image: linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 0), linear-gradient(90deg, rgba(255, 255, 255, .1) 1px, transparent 0);
+    background-size: 3px 3px;
+    margin-left: 30px;
+    margin-right: 15px;
+    box-shadow: -2px -2px 3px gray;
+}
+
+#icon2 {
+    background-color: #8784EB;
+    text-align: right;
+    margin-left: 15px;
+    margin-right: 30px;
+    box-shadow: 2px -2px 3px gray;
+    background-image: linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 0), linear-gradient(90deg, rgba(255, 255, 255, .1) 1px, transparent 0);
+    background-size: 3px 3px;
+    z-index: 1;
+}
+
+#icon3 {
+    background-color: #29B7A1;
+    margin-left: 30px;
+    margin-right: 15px;
+    box-shadow: -2px 2px 3px gray;
+    background-image: linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 0), linear-gradient(90deg, rgba(255, 255, 255, .1) 1px, transparent 0);
+    background-size: 3px 3px;
+}
+
+#icon4 {
+    background-color: #D4712D;
+    text-align: right;
+    margin-left: 15px;
+    margin-right: 30px;
+    box-shadow: 2px 2px 3px gray;
+    background-image: linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 0), linear-gradient(90deg, rgba(255, 255, 255, .1) 1px, transparent 0);
+    background-size: 3px 3px;
+}
+
+.iconkingbar {
+    position: Relative;
+}
+
+.iconking {
+    /*中間按鈕*/
+    position: absolute;
+    top: 84.75px;
+    left: 50%;
+    margin-left: -55.25px;
+    background-color: #41A9E6;
+    width: 110.5px;
+    height: 110.5px;
+    border-radius: 99em;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 0 3px gray;
+    background-image: linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 0), linear-gradient(90deg, rgba(255, 255, 255, .1) 1px, transparent 0);
+    background-size: 3px 3px;
+}
+
+#iconkingbg {
+    position: absolute;
+    background-color: rgb(255, 223, 129);
+    width: 145.5px;
+    height: 145.5px;
+    top: 67.25px;
+    left: 50%;
+    margin-left: -72.75px;
+    border-radius: 99em;
+    z-index: 0;
+}
+
+.iconking img {
+    width: 64px;
+    height: 64px;
+}
+
+@media screen and (max-width: 350px) {
+    h2 {
+        font-size: 15px;
+    }
+}
+
+.fish {
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    -webkit-animation: Fish 10s linear infinite;
+    animation: Fish 10s linear infinite;
+}
+
+.fish2 {
+    position: absolute;
+    transform: rotateY(180deg);
+    /* Safari 和 Chrome */
+    -webkit-transform: rotateY(180deg);
+    /* Firefox */
+    -moz-transform: rotateY(180deg);
+    /* IE 9 */
+    -ms-transform: rotateY(180deg);
+    top: 50%;
+    right: 100%;
+    -webkit-animation: Fish2 10s linear infinite;
+    animation: Fish2 10s linear infinite;
+}
+
+@-webkit-keyframes Fish {
+    25% {
+        transform: scale(1.1) translateY(-20px);
+        /* IE 9 */
+        -ms-transform: scale(1.1) translateY(-20px);
+        /* Firefox */
+        -moz-transform: scale(1.1) translateY(-20px);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1.1) translateY(-20px);
+    }
+    40% {
+        left: -10%;
+    }
+    50% {
+        transform: scale(1) translateY(0);
+        /* IE 9 */
+        -ms-transform: scale(1) translateY(0);
+        /* Firefox */
+        -moz-transform: scale(1) translateY(0);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1) translateY(0);
+        left: -36%;
+    }
+    51% {
+        transform: rotateY(180deg);
+        /* IE 9 */
+        -ms-transform: rotateY(180deg);
+        /* Firefox */
+        -moz-transform: rotateY(180deg);
+        /* Safari 和 Chrome */
+        -webkit-transform: rotateY(180deg);
+    }
+    75% {
+        transform: scale(1.1) rotateY(180deg) translateY(-20px);
+        /* IE 9 */
+        -ms-transform: scale(1.1) rotateY(180deg) translateY(-20px);
+        /* Firefox */
+        -moz-transform: scale(1.1) rotateY(180deg) translateY(-20px);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1.1) rotateY(180deg) translateY(-20px);
+    }
+    100% {
+        transform: scale(1) rotateY(180deg) translateY(0);
+        /* IE 9 */
+        -ms-transform: scale(1) rotateY(180deg) translateY(0);
+        /* Firefox */
+        -moz-transform: scale(1) rotateY(180deg) translateY(0);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1) rotateY(180deg) translateY(0);
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes Fish2 {
+    25% {
+        transform: rotateY(180deg) scale(1.1) translateY(-20px);
+        /* IE 9 */
+        -ms-transform: rotateY(180deg) scale(1.1) translateY(-20px);
+        /* Firefox */
+        -moz-transform: rotateY(180deg) scale(1.1) translateY(-20px);
+        /* Safari 和 Chrome */
+        -webkit-transform: rotateY(180deg) scale(1.1) translateY(-20px);
+    }
+    40% {
+        right: -10%;
+    }
+    50% {
+        transform: scale(1) translateY(0) rotateY(180deg);
+        /* IE 9 */
+        -ms-transform: scale(1) translateY(0) rotateY(180deg);
+        /* Firefox */
+        -moz-transform: scale(1) translateY(0) rotateY(180deg);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1) translateY(0) rotateY(180deg);
+        right: -36%;
+    }
+    52% {
+        transform: translateY(0);
+        /* IE 9 */
+        -ms-transform: translateY(0);
+        /* Firefox */
+        -moz-transform: translateY(0);
+        /* Safari 和 Chrome */
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        transform: scale(1.1) translateY(-20px);
+        /* IE 9 */
+        -ms-transform: scale(1.1) translateY(-20px);
+        /* Firefox */
+        -moz-transform: scale(1.1) translateY(-20px);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1.1) translateY(-20px);
+    }
+    99% {
+        transform: rotateY(180deg) rotateY(180deg);
+        /* IE 9 */
+        -ms-transform: rotateY(180deg) rotateY(180deg);
+        /* Firefox */
+        -moz-transform: rotateY(180deg) rotateY(180deg);
+        /* Safari 和 Chrome */
+        -webkit-transform: rotateY(180deg) rotateY(180deg);
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes Fish {
+    25% {
+        transform: scale(1.1) translateY(-20px);
+        /* IE 9 */
+        -ms-transform: scale(1.1) translateY(-20px);
+        /* Firefox */
+        -moz-transform: scale(1.1) translateY(-20px);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1.1) translateY(-20px);
+    }
+    40% {
+        left: -10%;
+    }
+    50% {
+        transform: scale(1) translateY(0);
+        /* IE 9 */
+        -ms-transform: scale(1) translateY(0);
+        /* Firefox */
+        -moz-transform: scale(1) translateY(0);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1) translateY(0);
+        left: -36%;
+    }
+    51% {
+        transform: rotateY(180deg);
+        /* IE 9 */
+        -ms-transform: rotateY(180deg);
+        /* Firefox */
+        -moz-transform: rotateY(180deg);
+        /* Safari 和 Chrome */
+        -webkit-transform: rotateY(180deg);
+    }
+    75% {
+        transform: scale(1.1) rotateY(180deg) translateY(-20px);
+        /* IE 9 */
+        -ms-transform: scale(1.1) rotateY(180deg) translateY(-20px);
+        /* Firefox */
+        -moz-transform: scale(1.1) rotateY(180deg) translateY(-20px);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1.1) rotateY(180deg) translateY(-20px);
+    }
+    100% {
+        transform: scale(1) rotateY(180deg) translateY(0);
+        /* IE 9 */
+        -ms-transform: scale(1) rotateY(180deg) translateY(0);
+        /* Firefox */
+        -moz-transform: scale(1) rotateY(180deg) translateY(0);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1) rotateY(180deg) translateY(0);
+        left: 100%;
+    }
+}
+
+@keyframes Fish2 {
+    25% {
+        transform: rotateY(180deg) scale(1.1) translateY(-20px);
+        /* IE 9 */
+        -ms-transform: rotateY(180deg) scale(1.1) translateY(-20px);
+        /* Firefox */
+        -moz-transform: rotateY(180deg) scale(1.1) translateY(-20px);
+        /* Safari 和 Chrome */
+        -webkit-transform: rotateY(180deg) scale(1.1) translateY(-20px);
+    }
+    40% {
+        right: -10%;
+    }
+    50% {
+        transform: scale(1) translateY(0) rotateY(180deg);
+        /* IE 9 */
+        -ms-transform: scale(1) translateY(0) rotateY(180deg);
+        /* Firefox */
+        -moz-transform: scale(1) translateY(0) rotateY(180deg);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1) translateY(0) rotateY(180deg);
+        right: -36%;
+    }
+    52% {
+        transform: translateY(0);
+        /* IE 9 */
+        -ms-transform: translateY(0);
+        /* Firefox */
+        -moz-transform: translateY(0);
+        /* Safari 和 Chrome */
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        transform: scale(1.1) translateY(-20px);
+        /* IE 9 */
+        -ms-transform: scale(1.1) translateY(-20px);
+        /* Firefox */
+        -moz-transform: scale(1.1) translateY(-20px);
+        /* Safari 和 Chrome */
+        -webkit-transform: scale(1.1) translateY(-20px);
+    }
+    99% {
+        transform: rotateY(180deg) rotateY(180deg);
+        /* IE 9 */
+        -ms-transform: rotateY(180deg) rotateY(180deg);
+        /* Firefox */
+        -moz-transform: rotateY(180deg) rotateY(180deg);
+        /* Safari 和 Chrome */
+        -webkit-transform: rotateY(180deg) rotateY(180deg);
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.fish img,
+.fish2 img {
+    width: 100px;
+}
+
+
+/* Bubbles */
+
+.bubbles {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.bubbles {
+    z-index: 10
+}
+
+.bubbles span {
+    border-radius: 100%;
+    position: absolute;
+    display: block
+}
+
+.bubbles span:nth-child(1) {
+    border: 2px solid #fff;
+    width: 1px;
+    height: 1px;
+    left: 50px;
+    top: 50px;
+    -webkit-animation: 2s bubbles linear infinite;
+    animation: 2s bubbles linear infinite
+}
+
+.bubbles span:nth-child(2) {
+    border: 3px solid #fff;
+    width: 2px;
+    height: 2px;
+    left: 50px;
+    top: 110px;
+    -webkit-animation: 3s bubbles linear infinite;
+    animation: 3s bubbles linear infinite
+}
+
+.bubbles span:nth-child(3) {
+    border: 2px solid #fff;
+    width: 3px;
+    height: 3px;
+    left: 120px;
+    top: 90px;
+    -webkit-animation: 1s bubbles linear infinite alternate;
+    animation: 1s bubbles linear infinite alternate
+}
+
+.bubbles span:nth-child(4) {
+    border: 1px solid #fff;
+    width: 2px;
+    height: 3px;
+    left: 150px;
+    top: 120px;
+    -webkit-animation: .5s bubbles linear infinite alternate;
+    animation: .5s bubbles linear infinite alternate
+}
+
+.bubbles span:nth-child(5) {
+    border: 1px solid #fff;
+    width: 2px;
+    height: 3px;
+    left: 150px;
+    top: 90px;
+    -webkit-animation: 5s bubbles linear infinite;
+    animation: 5s bubbles linear infinite
+}
+
+
+/* Bubbles Noise*/
+
+.bubbles p {
+    width: 2px;
+    height: 2px;
+    background-color: #FFF;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.bubbles p:nth-of-type(1) {
+    top: 90px;
+    right: 20px;
+    -webkit-animation: 2s bubbles linear infinite;
+    animation: 2s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(2) {
+    top: 100px;
+    right: 40px;
+    -webkit-animation: 3s bubbles linear infinite;
+    animation: 3s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(3) {
+    top: 100px;
+    right: 90px;
+    -webkit-animation: 4s bubbles linear infinite;
+    animation: 4s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(4) {
+    top: 70px;
+    right: 130px;
+    -webkit-animation: 5s bubbles linear infinite;
+    animation: 5s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(5) {
+    top: 90px;
+    right: 180px;
+    -webkit-animation: 1s bubbles linear infinite alternate;
+    animation: 1s bubbles linear infinite alternate
+}
+
+.bubbles p:nth-of-type(6) {
+    top: 150px;
+    right: 150px;
+    -webkit-animation: 3s bubbles linear infinite;
+    animation: 3s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(7) {
+    top: 140px;
+    right: 92px;
+    -webkit-animation: 2s bubbles linear infinite;
+    animation: 2s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(8) {
+    top: 130px;
+    right: 122px;
+    -webkit-animation: 2s bubbles linear infinite;
+    animation: 2s bubbles linear infinite
+}
+
+@-webkit-keyframes bubbles {
+    30% {
+        margin-left: -20px
+    }
+    60% {
+        margin-left: 0
+    }
+    100% {
+        margin-left: 20px;
+        top: 20px;
+        opacity: 0
+    }
+}
+
+@keyframes bubbles {
+    30% {
+        margin-left: -20px
+    }
+    60% {
+        margin-left: 0
+    }
+    100% {
+        margin-left: 20px;
+        top: 20px;
+        opacity: 0
+    }
+}
+
+#imgod1 {
+    position: absolute;
+    bottom: 50%;
+    left: 10px;
+    width: 200px;
+    height: 60px;
+    background: rgb(223, 245, 249);
+    border-radius: 50%/50%;
+}
+
+#imgod2 {
+    position: absolute;
+    bottom: 70%;
+    right: 0;
+    width: 200px;
+    height: 60px;
+    background: rgb(223, 245, 249);
+    border-radius: 100% 0 0 100% /50%;
+}
