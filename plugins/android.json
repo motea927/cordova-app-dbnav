@@ -19,9 +19,6 @@
     "cordova-plugin-nativestorage": {
       "PACKAGE_NAME": "com.dbnav"
     },
-    "cordova-plugin-ezar-videooverlay": {
-      "PACKAGE_NAME": "com.dbnav"
-    },
     "cordova-plugin-camera-preview": {
       "PACKAGE_NAME": "com.dbnav"
     }

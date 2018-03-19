@@ -30,7 +30,6 @@
     <plugin name="cordova-plugin-device-orientation" spec="^1.0.7" />
     <plugin name="cordova-plugin-geolocation" spec="^3.0.0" />
     <plugin name="cordova-plugin-nativestorage" spec="^2.2.2" />
-    <plugin name="cordova-plugin-ezar-videooverlay" spec="^1.0.0" />
     <plugin name="cordova-plugin-camera-preview" spec="git+https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" />
     <engine name="android" spec="^6.3.0" />
 </widget>

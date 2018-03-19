@@ -57,22 +57,6 @@ module.exports = [
     "pluginId": "cordova-plugin-nativestorage"
   },
   {
-    "id": "cordova-plugin-ezar-videooverlay.videoOverlay",
-    "file": "plugins/cordova-plugin-ezar-videooverlay/www/videoOverlay.js",
-    "pluginId": "cordova-plugin-ezar-videooverlay",
-    "merges": [
-      "ezar"
-    ]
-  },
-  {
-    "id": "cordova-plugin-ezar-videooverlay.camera",
-    "file": "plugins/cordova-plugin-ezar-videooverlay/www/camera.js",
-    "pluginId": "cordova-plugin-ezar-videooverlay",
-    "clobbers": [
-      "camera"
-    ]
-  },
-  {
     "id": "cordova-plugin-camera-preview.CameraPreview",
     "file": "plugins/cordova-plugin-camera-preview/www/CameraPreview.js",
     "pluginId": "cordova-plugin-camera-preview",
@@ -88,7 +72,6 @@ module.exports.metadata =
   "cordova-plugin-device-orientation": "1.0.7",
   "cordova-plugin-geolocation": "3.0.0",
   "cordova-plugin-nativestorage": "2.2.2",
-  "cordova-plugin-ezar-videooverlay": "1.0.0",
   "cordova-plugin-camera-preview": "0.9.0"
 };
 // BOTTOM OF METADATA
