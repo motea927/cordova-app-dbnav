@@ -1,10 +1,10 @@
 ![dbnav](https://1031241139.000webhostapp.com/dbnav-web/img/logo.jpg)
-##[官方網站](https://1031241139.000webhostapp.com/dbnav-web/index.html)
-##鵬程灣里
+## [官方網站](https://1031241139.000webhostapp.com/dbnav-web/index.html)
+## 鵬程灣里
 > 一款智慧化的導覽軟體，結合AR、GPS等相關技術而成，
 並提供語音導覽及評分功能增添程式互動性。
 
-##鵬程灣里有哪些功能？
+## 鵬程灣里有哪些功能？
 
 * 依照景點距離或星等排序以列表式呈現
 * 依地圖瀏覽方式在地圖上顯示景點
@@ -13,7 +13,7 @@
 * 可依遊客需求自訂景點資訊顯示距離
 * 語音導覽功能
 
-##使用技術、語言、套件及框架
+## 使用技術、語言、套件及框架
 
 * html、css、javascript、jquery、cordova
 * cordova-puugin:
@@ -29,7 +29,7 @@
     * [SweetAlert](https://sweetalert.js.org/guides/)
 * 後端採用php7.x+mysql
 
-##作者
+## 作者
 
 ```javascript
   var author = {
