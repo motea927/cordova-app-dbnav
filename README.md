@@ -1,5 +1,6 @@
 ![dbnav](https://1031241139.000webhostapp.com/dbnav-web/img/logo.jpg)
-## [官方網站](https://1031241139.000webhostapp.com/dbnav-web/index.html)
+## [官方網站](https://protected-refuge-18096.herokuapp.com/)
+## [官方網站(備用)](https://1031241139.000webhostapp.com/dbnav-web/index.html)
 ## 鵬程灣里
 > 一款智慧化的導覽軟體，結合AR、GPS等相關技術而成，
 並提供語音導覽及評分功能增添程式互動性。
